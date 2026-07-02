@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Lock } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,7 +6,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import AdminPanel from './components/AdminPanel';
 import { PERSONAL_INFO, PROJECTS, SKILLS, EXPERIENCES } from './data';
 
 export default function App() {
@@ -18,7 +16,6 @@ export default function App() {
     skills: SKILLS,
     experiences: EXPERIENCES,
   });
-  const [adminOpen, setAdminOpen] = useState(false);
 
   // Load portfolio database from server
   useEffect(() => {
@@ -36,10 +33,6 @@ export default function App() {
         console.error('Fell back to static data:', err);
       });
   }, []);
-
-  const handleSaveSuccess = (updatedData: any) => {
-    setPortfolioData(updatedData);
-  };
 
   // Monitor scrolling to highlight correct nav link
   useEffect(() => {
@@ -103,14 +96,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 font-mono text-xs text-neutral-500">
           <p>© {new Date().getFullYear()} Hassan Mehdi. All rights reserved.</p>
           <div className="flex items-center space-x-6">
-            <button
-              onClick={() => setAdminOpen(true)}
-              title="Admin Panel"
-              className="hover:text-indigo-400 text-neutral-400 cursor-pointer transition-colors border border-neutral-850 hover:border-neutral-800 bg-neutral-900/40 p-2 rounded-lg flex items-center justify-center shrink-0"
-              aria-label="Admin Panel"
-            >
-              <Lock className="w-4 h-4" />
-            </button>
             <span className="flex items-center space-x-2">
               <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
               <span>System: ONLINE</span>
@@ -119,14 +104,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Admin Panel Overlap View */}
-      <AdminPanel 
-        isOpen={adminOpen} 
-        onClose={() => setAdminOpen(false)} 
-        portfolioData={portfolioData}
-        onSaveSuccess={handleSaveSuccess}
-      />
     </div>
   );
 }

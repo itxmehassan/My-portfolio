@@ -5,10 +5,10 @@ export const PERSONAL_INFO = {
   title: 'Full-Stack Developer',
   email: 'hassanmehdi1444@gmail.com',
   github: 'https://github.com/hassanmehdi',
-  linkedin: 'https://linkedin.com/in/hassanmehdi',
   twitter: 'https://twitter.com/hassanmehdi',
   bio: 'A results-driven Full-Stack Developer with over 4 years of experience building high-performance, secure web applications. Specializing in designing robust Node.js/Express backend microservices, paired with fluid, responsive React interfaces. Passionate about system architecture, performance optimization, and integrating AI workflows.',
-  avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400', // Modern elegant professional avatar asset placeholder
+  avatarUrl: '/uploads/481083471_2346470552401434_4370736236075103065_n_1783021908423.jpg',
+  polaroidUrl: '/uploads/mgcs9618_1783021921339.JPG',
   location: 'Dallas, TX (Remote Available)',
   availability: 'Open to Full-Time & Freelance Contracts',
 };

@@ -1,6 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Mail, Send, CheckCircle2, AlertCircle, Github, Linkedin, MessageCircle } from 'lucide-react';
+import { Mail, Send, CheckCircle2, AlertCircle, Github, MessageCircle } from 'lucide-react';
 import { PERSONAL_INFO } from '../data';
 
 export default function Contact() {
@@ -104,27 +104,9 @@ export default function Contact() {
                 </div>
               </a>
 
-              {/* LinkedIn Card */}
-              <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="group flex items-center space-x-4 p-5 rounded-2xl bg-neutral-950/40 hover:bg-neutral-900/50 border border-neutral-850/50 hover:border-blue-500/30 transition-all duration-300"
-              >
-                <div className="p-3 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-xl transition-transform duration-300 group-hover:scale-105">
-                  <Linkedin className="w-5 h-5" />
-                </div>
-                <div className="space-y-0.5">
-                  <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">LinkedIn</p>
-                  <p className="text-xs md:text-sm font-semibold font-mono text-neutral-200 group-hover:text-white transition-colors">
-                    linkedin.com/in/hassanmehdi
-                  </p>
-                </div>
-              </a>
-
               {/* WhatsApp Card */}
               <a
-                href="https://wa.me/923214567890"
+                href="https://wa.me/923121478698"
                 target="_blank"
                 rel="noreferrer"
                 className="group flex items-center space-x-4 p-5 rounded-2xl bg-neutral-950/40 hover:bg-neutral-900/50 border border-neutral-850/50 hover:border-emerald-500/30 transition-all duration-300"
@@ -133,9 +115,9 @@ export default function Contact() {
                   <MessageCircle className="w-5 h-5" />
                 </div>
                 <div className="space-y-0.5">
-                  <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">WhatsApp</p>
+                  <p className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest">WhatsApp / Call</p>
                   <p className="text-xs md:text-sm font-semibold font-mono text-neutral-200 group-hover:text-white transition-colors">
-                    +92 321 4567890
+                    0312 1478698
                   </p>
                 </div>
               </a>

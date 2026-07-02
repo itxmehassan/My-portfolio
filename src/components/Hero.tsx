@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Code, Github, Linkedin, MessageSquare, Terminal, ChevronRight } from 'lucide-react';
+import { Code, Github, MessageSquare, Terminal, ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
 import { PERSONAL_INFO } from '../data';
 
@@ -257,15 +257,6 @@ export default function Hero({ personalInfo, onExploreProjects, onContact }: Her
               aria-label="GitHub Profile"
             >
               <Github className="w-4 h-4" />
-            </a>
-            <a
-              href={info.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="p-2 bg-neutral-900 hover:bg-neutral-800 border border-neutral-850 rounded-lg text-neutral-400 hover:text-white transition-all duration-300"
-              aria-label="LinkedIn Profile"
-            >
-              <Linkedin className="w-4 h-4" />
             </a>
             <button
               onClick={onContact}

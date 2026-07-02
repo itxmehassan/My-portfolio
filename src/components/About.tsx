@@ -20,7 +20,6 @@ ${info.name.toUpperCase()} - ${info.title.toUpperCase()}
 =========================================
 Email: ${info.email}
 GitHub: ${info.github}
-LinkedIn: ${info.linkedin}
 Location: ${info.location}
 
 SUMMARY:
